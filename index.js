@@ -23,7 +23,7 @@ app.use(require("./router/specialtiy.router"));
 mongoose
   .connect(MONGO_URI)
   .then(() => {
-    console.log("MongoDB connected");
+    console.log("MongoDB is connected");
   })
   .catch((err) => {
     console.log(err);
