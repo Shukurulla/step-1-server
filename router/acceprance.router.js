@@ -3,7 +3,7 @@ const cors = require("cors");
 const Acceptance = require("../models/acceptance");
 const router = Router();
 
-router.post("/post-acceptance", cors(), async (req, res) => {
+router.post("/post-acceptance", async (req, res) => {
   const acceptance = await Acceptance.create(req.body);
   if (!acceptance) {
     req.status(501).json({ status: "Failure", mag: "Error" });
