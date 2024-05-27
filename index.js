@@ -19,6 +19,7 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(require("./router/doctors.router.js"));
 app.use(require("./router/specialtiy.router"));
+app.use(require("./router/acceprance.router"));
 
 mongoose
   .connect(MONGO_URI)
