@@ -1,5 +1,5 @@
 const { Router } = require("express");
-const cors = requrie("cors");
+const cors = require("cors");
 const Acceptance = require("../models/acceptance");
 const router = Router();
 
